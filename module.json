@@ -15,5 +15,6 @@
     "bugs": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/issues",
     "readme": "README.md",
     "license": "LICENSE",
-    "download": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/archive/main.zip"
+    "download": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/archive/v1.0.0.zip",
+    "manifest": "https://raw.githubusercontent.com/J-Guenther/foundryvtt-journal-thumbnail/main/module.json"
 }
