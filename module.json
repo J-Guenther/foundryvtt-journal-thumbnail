@@ -1,0 +1,19 @@
+{
+    "name": "journal-thumbnail",
+    "title": "Thumbnails for Journal Entries",
+    "description": "A simple module that uses the image of a journal entry as a thumbnail",
+    "author": "J-Guenther",
+    "version": "1.0.0",
+    "minimumCoreVersion": "0.7.5",
+    "scripts": [
+        "scripts/thumbnail.js"
+    ],
+    "styles": [
+        "styles/thumbnail.css"
+    ],
+    "url": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail",
+    "bugs": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/issues",
+    "readme": "README.md",
+    "license": "LICENSE",
+    "download": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/archive/main.zip"
+}
