@@ -16,5 +16,6 @@
     "readme": "README.md",
     "license": "LICENSE",
     "download": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/archive/v1.0.1.zip",
-    "manifest": "https://raw.githubusercontent.com/J-Guenther/foundryvtt-journal-thumbnail/main/module.json"
+    "manifest": "https://raw.githubusercontent.com/J-Guenther/foundryvtt-journal-thumbnail/main/module.json",
+    "compatibleCoreVersion": "0.7.5"
 }
