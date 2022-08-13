@@ -1,22 +1,29 @@
 {
-    "name": "journal-thumbnail",
-    "title": "Thumbnails for Journal Entries",
-    "description": "A simple module that uses the image of a journal entry as a thumbnail",
-    "author": "J-Guenther",
-    "version": "1.0.5",
-    "minimumCoreVersion": "9.238",
-    "scripts": [
-        "scripts/thumbnail.js"
-    ],
-    "styles": [
-        "styles/thumbnail.css"
-    ],
-    "url": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail",
-    "bugs": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/issues",
-    "readme": "README.md",
-    "license": "LICENSE",
-    "download": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/archive/v1.0.5.zip",
-    "manifest": "https://raw.githubusercontent.com/J-Guenther/foundryvtt-journal-thumbnail/main/module.json",
-    "compatibleCoreVersion": "9",
-    "changelog": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/releases"
+  "title": "Thumbnails for Journal Entries",
+  "description": "A simple module that uses the image of a journal entry as a thumbnail",
+  "version": "2.0.0",
+  "scripts": [
+    "scripts/thumbnail.js"
+  ],
+  "styles": [
+    "styles/thumbnail.css"
+  ],
+  "url": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail",
+  "bugs": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/issues",
+  "readme": "README.md",
+  "license": "LICENSE",
+  "download": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/archive/v1.0.5.zip",
+  "manifest": "https://raw.githubusercontent.com/J-Guenther/foundryvtt-journal-thumbnail/main/module.json",
+  "changelog": "https://github.com/J-Guenther/foundryvtt-journal-thumbnail/releases",
+  "id": "journal-thumbnail",
+  "authors": [
+    {
+      "name": "J-Guenther",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  }
 }

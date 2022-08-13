@@ -6,9 +6,14 @@ class Thumbnail {
             const id = target.data('document-id');
             const journalEntry = game.journal.get(id);
             
-            if (journalEntry?.data?.img) {
-                const thumbnail = $('<img class="thumbnail" src="' + journalEntry.data.img + '" alt="Journal Entry Thumbnail">');
-                target.append(thumbnail);
+            if(journalEntry?.data?.document?.pages.size > 0) {
+                const iterator = journalEntry?.data?.document?.pages.values()
+                const firstJournalPage = iterator.next().value;
+    
+                if (firstJournalPage.src) {
+                    const thumbnail = $('<img class="thumbnail" src="' + firstJournalPage.src + '" alt="Journal Entry Thumbnail">');
+                    target.append(thumbnail);
+                }
             }
         }
     }
