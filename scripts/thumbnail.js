@@ -1,6 +1,6 @@
 class Thumbnail {
     static addToEntries(app, html) {
-        console.log('update journal')
+        console.log('update journal!')
         const lis = html.find('li.journalentry');
         for (const li of lis) {
             const target = $(li);
@@ -13,7 +13,11 @@ class Thumbnail {
     
                 if (firstJournalPage.src) {
                     const thumbnail = $('<img class="thumbnail" src="' + firstJournalPage.src + '" alt="Journal Entry Thumbnail">');
-                    target.append(thumbnail);
+                    
+                    switch (game.settings.get("journal-thumbnail", "thumbnailPosition")) {
+                        case "right": target.append(thumbnail); break;
+                        case "left": target.prepend(thumbnail); break;
+                      }
                 }
             }
         }
@@ -23,5 +27,22 @@ class Thumbnail {
     }
 }
 
+console.log(game.settings);
+
+Hooks.once("init", function() {
+    game.settings.register("journal-thumbnail", "thumbnailPosition", {
+        name: "Thumbnail Position",
+        hint: "Whether the thumbnail is left of the journal entry title or right",
+        scope: "world",
+        config: true,
+        default: "right",
+        type: String,
+        choices: {
+            right: "Right",
+            left: "Left",
+        },
+        onChange: () => game.journal.render()
+    });
+});
 Hooks.on('renderJournalDirectory', Thumbnail.addToEntries);
 Hooks.on('renderJournalSheet', Thumbnail.updateJournalDirectory);
